@@ -1,10 +1,10 @@
 if [ "$short" != "" ]; then 
-    if [ $dbg != 0 ]; then echo "  -- status: short installed"; fi
+    if [ "$dbg" != "" ]; then echo "  -- status: short installed"; fi
 fi
 
 short=short.sh
 
-if [ $dbg != 0 ]; then echo "  -- short installing"; fi
+if [ "$dbg" != "" ]; then echo "  -- short installing"; fi
 
 alias egrep='egrep --color=auto'
 alias fgrep='fgrep --color=auto'
@@ -59,4 +59,4 @@ gosrc()
 {
     pushd ~/src/$1 > /dev/null
 }
-if [ $dbg != 0 ]; then echo "  -- ok"; fi
+if [ "$dbg" != "" ]; then echo "  -- ok"; fi
