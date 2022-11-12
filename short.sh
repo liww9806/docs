@@ -1,3 +1,9 @@
+if [ "$short" != "" ]; then 
+    if [ $dbg != 0 ]; then echo "  -- status: short installed"; fi
+fi
+
+short=short.sh
+
 if [ $dbg != 0 ]; then echo "  -- short installing"; fi
 
 alias egrep='egrep --color=auto'
@@ -10,12 +16,13 @@ alias ls='ls --color=auto'
 
 alias his='history | grep '
 
-short=short.sh
-
+alias enbash='. ~/.bashrc'
 
 h()
 {
-    echo " -- go: pushd ~, dev/org/git/src/test/dbg"
+    echo " -- go      : pushd ~, dev/org/git/src/test/dbg"
+    echo " -- enbash  : . ~/.bashrc"
+    echo " -- his     : alias his='history | grep '"
 }
 
 go()
