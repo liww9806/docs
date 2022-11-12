@@ -1,3 +1,5 @@
+if [ $dbg != 0 ]; then echo "  -- short installing"; fi
+
 alias egrep='egrep --color=auto'
 alias fgrep='fgrep --color=auto'
 alias grep='grep --color=auto'
@@ -6,14 +8,14 @@ alias la='ls -A'
 alias ll='ls -alF'
 alias ls='ls --color=auto'
 
+alias his='history | grep '
+
+short=short.sh
+
+
 h()
 {
     echo " -- go: pushd ~, dev/org/git/src/test/dbg"
-}
-
-has_short()
-{
-    return 0
 }
 
 go()
@@ -50,3 +52,4 @@ gosrc()
 {
     pushd ~/src/$1 > /dev/null
 }
+if [ $dbg != 0 ]; then echo "  -- ok"; fi

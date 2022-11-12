@@ -10,7 +10,11 @@ name=short.sh
 mkdir -p ~/bin
 \cp $name ~/bin/
 
-echo "" >> ~/.bashrc
-cat tobash.sh >> ~/.bashrc
-echo "" >> ~/.bashrc
+dst=dbg.sh
+
+echo "" > $dst
+
+echo "" >> $dst
+cat tobash.sh >>$dst
+echo "" >> $dst
 
