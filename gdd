@@ -1,0 +1,11 @@
+echo git branch -D $*
+git branch -D $*
+ret=$?
+git branch
+
+echo
+if [ "$ret" == "0" ]; then
+    echo "  -- ok"
+else
+    echo "  -- fail"
+fi

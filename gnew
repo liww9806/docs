@@ -1,0 +1,2 @@
+git push origin HEAD:$1
+git checkout $1
