@@ -1,2 +1,2 @@
-git push origin HEAD:$1
-git checkout $1
+gpush $*
+gc $1

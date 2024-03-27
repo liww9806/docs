@@ -1,3 +1,23 @@
-echo git checkout $*
-git checkout $*
-git branch
+if [ "$1" == "" ]; then
+    echo the arg is null
+fi
+i=0
+found=0
+for name in $(git branch); do
+    if [ ! -e "$name" ]; then
+        if [ "$1" == "$i" ] || [ "$1" == "$name" ]; then
+            echo git checkout $i. $name
+            git rev-parse --abbrev-ref HEAD > ~/git-branch.txt
+            git checkout $name
+            ga
+            found=1
+        fi
+        let i=i+1
+    fi
+done
+
+if [ "$found" == "0" ] && [ "$1" != "" ]; then
+    git rev-parse --abbrev-ref HEAD > ~/git-branch.txt
+    git checkout $1
+    ga
+fi

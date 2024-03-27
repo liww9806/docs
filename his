@@ -1,0 +1,5 @@
+if [ "$1" == "" ]; then
+	history | tail -10
+else
+	history | tail -$1
+fi

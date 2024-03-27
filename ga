@@ -1,0 +1,10 @@
+i=0
+for name in $(git branch); do
+    if [ ! -e "$name" ]; then
+        echo $i. $name
+        let i=i+1
+    fi
+done
+echo -----------------------
+git branch | grep "*"
+git log --oneline -1
