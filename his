@@ -1,5 +1,5 @@
 if [ "$1" == "" ]; then
 	history 10
 else
-	history $1
+	history | grep $1
 fi
