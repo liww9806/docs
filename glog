@@ -1,5 +1,0 @@
-if [ "$1" == "" ]; then
-    git log --oneline -10
-else
-    git log --oneline -$1
-fi
