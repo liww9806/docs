@@ -1,4 +1,0 @@
-for id in $(ps aux | grep -v grep | grep $0 | tr -s " " | cut -d" " -f 2);
-    do echo $id;
-    kill -9 $id;
-done

@@ -1,2 +1,0 @@
-echo git checkout `cat ~/git-branch.txt`
-git checkout `cat ~/git-branch.txt`

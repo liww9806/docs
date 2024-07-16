@@ -1,1 +1,0 @@
-history | sed -n "$1 p" | awk '{$1=""; print}'

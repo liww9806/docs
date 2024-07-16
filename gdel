@@ -1,2 +1,0 @@
-echo git push origin --delete $1
-git push origin --delete $1

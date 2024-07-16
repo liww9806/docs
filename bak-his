@@ -1,4 +1,0 @@
-mkdir -p ~/bak
-history -a
-cat ~/.bash_history >> ~/bak/.bash_history
-tail ~/bak/.bash_history

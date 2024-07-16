@@ -1,5 +1,0 @@
-if [ "$1" != "" ]; then
-    git reset --soft HEAD~$*
-else
-    git reset --soft HEAD^
-fi

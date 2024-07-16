@@ -1,5 +1,0 @@
-if [ "$1" == "" ]; then
-	history 10
-else
-	history | grep $1
-fi
