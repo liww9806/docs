@@ -1,0 +1,10 @@
+------------- Classes -----------------
+class A<int A:i = ?> {
+  int v = A:i;
+  int v1 = !add(A:i, 1);
+}
+------------- Defs -----------------
+def a {	// A
+  int v = 1;
+  int v1 = 2;
+}
